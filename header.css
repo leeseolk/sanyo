@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0, auto;
+    padding: 0, auto;
+    height: 100vh;
+    font-size: 35px;
+  font-family: system-ui;
+  background-image :url(main.gif);
+  background-size: cover;
+
+}
+
+header {
+  background: #000000;
+  padding-top: 0.1rem;
+  padding-bottom: 0.4rem;
+}
+
+header .marquee {
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-animation: color 5s linear infinite;
+          animation: color 5s linear infinite;
+ 
+}
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.material-icons {
+  font-size: 2.5rem;
+  color: #aaa;
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: #ffbf00;
+  }
+  25% {
+    color: #0036c0;
+  }
+  50% {
+    color: rgb(3, 143, 21);
+  }
+  75% {
+    color:#0036c0;
+  }
+  100% {
+    color:#ffbf00;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #ffbf00;
+  }
+  25% {
+    color:#0036c0;
+  }
+  50% {
+    color:  rgb(3, 143, 21);
+  }
+  75% {
+    color:#0036c0;
+  }
+  100% {
+    color:#ffbf00;
+  }
+}

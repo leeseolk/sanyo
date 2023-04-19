@@ -1,0 +1,66 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    background-image :url(main.gif) no-repeat center;
+    background-size: cover
+   
+}
+
+.menu {
+    position: absolute;
+    margin: 20px;
+    margin-top: -30px;
+}
+
+.menu-item {
+    font-size: 90px;
+    margin: 5px;
+    overflow: hidden;
+    margin-top: -25px;
+}
+
+.menu-item-wrapper {
+    display: flex;
+    position: relative;
+    left: -8%;
+    transition: all 0.2s ease-out;
+}
+
+ion-icon {
+    position: relative;
+    top: 15px;
+    margin-right: 50px;
+}
+
+.menu-item:hover .menu-item-wrapper {
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+}
+a:hover {
+    content: '';
+    position: absolute;
+    width: 0,auto;
+    transform: scaleX(0);
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    background-color: #0036c0;
+    transform-origin:center;
+    transition: transform 0.25s ease-out;
+  }
+  
+  a:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+

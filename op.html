@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sanyo2.css" />
+    <link rel="stylesheet" href="./footer2.css" />
+    <link rel="stylesheet" href="./op.css" />
+    <link rel="stylesheet" href="./text.css" />
+
+
+
+    <title>Document</title>
+    <style>
+
+div, ::after {
+  display: grid;
+  grid-area: 1/1;
+  place-self: center;
+}
+
+.scene {
+    border-radius: 50%;
+  overflow: hidden;
+  width: min(45em, 95vmin);
+  height: min(5em, 95vmin);
+ 
+}
+.scene::after {
+  background:#0036c0;
+  mix-blend-mode: multiply;
+  content: "";
+}
+
+.wrap {
+  place-self: stretch;
+  transform: rotate(0.5turn);
+  animation: rotz 2.5s linear infinite, flip 5s steps(1) infinite;
+}
+.ripple1 {
+  color:white;
+}
+.ripple2 {
+  color:rgb(0, 0, 0);
+}
+@keyframes rotz {
+  0%, 80% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes flip {
+  50% {
+    filter: invert(1);
+  }
+}
+.split {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0036c0 100%, #000000 100%);
+}
+
+
+@keyframes ball {
+  20%, 100% {
+    transform: translatey(300%);
+  }
+}
+
+@keyframes grow {
+  0%, 20% {
+    padding: 0;
+  }
+  40%, 100% {
+    padding: 10% 40%;
+  }
+}
+@keyframes fade {
+  0%, 45% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+        h1{
+            margin-top: -10px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 100;
+            background-color: #0036c0;
+        }
+        P{
+            font-size: 15px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body{ -ms-overflow-style: none;} 
+        ::-webkit-scrollbar { display: none;}  
+        </style>
+</head>
+<body>
+    <header>  
+        <nav>
+            <span class="left-nav">
+             <a href="index.html"><img src="./main1.png"width="300px" alt=""></a>
+            </span>
+            <span class="right-nav">
+                <a href="./sanyo.html">Sanyo Xacti</a>
+                <a href="acc.html">Accessories</a>
+                <div class="acc"><a href="op.html">Operate</a></div>
+                <a href="./photo.html">Photo</a>
+                <a href="./video.html">Video</a>
+            </span>
+        </nav>
+      </header>
+      <section>
+        <div style="float: left;">
+            <details open>
+                <summary>
+                   Preparing the camera
+                </summary>
+                <div>
+                    <h1>Insert SD Memory Card.</h1>
+                    <img src="./op1.png" width="300px" alt=""> 
+                    <br><p>- SD카드는 포함되어 있지 않으니, 시판되고 있는 SD카드를 구입합니다(32GB까지 지원)</p>
+                    <br><h1>Connect the AC adaptor to the camera.</h1>
+                    <img src="./op2.png" width="500px" alt="">
+                </div>
+            </details>
+            <details>
+                <summary>
+                    Date and Time setting
+                </summary>
+                <div>
+                    <center>
+                    <img src="./그림9.gif" width="300px" alt="">
+                    <p>카메라를 켜고 SET 버튼을 누르면 시계 설정 화면이 나타납니다.
+                        <br>기록 또는 표시 방법 : 재생 화면에서 MENU 버튼을 두 번 누릅니다.
+                    </p>
+                    <br>
+                    <h1>Set the date</h1>
+                    <img src="./그림10.gif" width="300px" alt="">
+                    <p>1. "DATE"를 선택합니다.
+                        <br>2. SET 버튼을 누릅니다.(날짜 설정 화면이 나타납니다.)
+                        <br>3. 날짜를 임의로 설정합니다.(순서대로 연도, 월, 일)
+                        <br>4. SET 버튼을 누르면 저장됩니다.
+                    </p>
+                    <br>
+                    <h1>Set the clock</h1>
+                    <img src="./그림11.gif" width="300px" alt="">
+                    <p>1. "TIME"을 선택합니다.
+                        <br>2. SET 버튼을 누릅니다.(시간 설정 화면이 나타납니다.)
+                        <br>3. 시간을 임의로 설정합니다.(시간⟶ 분 순서로 설정, 24시간 시계는 시간 표시에 사용됩니다.)
+                        <br>4. SET 버튼을 누르면 저장됩니다.
+                    </p>
+                    <br>
+                    <h1>Set the order in which the date is
+                        displayed during playback</h1>
+                    <img src="./그림12.gif" width="300px" alt="">
+                    <P>1. "DISP"를 선택합니다.
+                    <br>2. SET 버튼을 누릅니다.(날짜 형식 설정화면이 나타납니다)
+                    <br>3. SET버튼을 위로 전환하여 Y/M/D ⟶ M/D/Y ⟶ D/M/Y(아래 버튼은 역순입니다.)
+                    <br>4. SET 버튼을 누르면 저장됩니다.</P>
+                </center>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    SWITCHING THE OPERATING MODE_NORMAL Mode Recording Menu1
+                </summary>
+                <div>
+                    <center>
+                        <img src="./그림14.gif"width="300px" alt="">
+                        <p> 촬영 메뉴 1에서는 동영상 해상도, 사진 해상도, 장면 모드, 필터 효과, 플래시 기능, 셀프 타이머 <br>
+                             등을 설정할 수 있습니다. 동영상은 1,280 x 720 HD 해상도 영상을 초당 30프레임으로 찍거나<br>
+                             640 x 480 VGA 해상도 영상을 초당 60프레임으로 찍을 수 있습니다. <br>
+                             사진 해상도는 TH1의 기본 화소수인 110만 화소 외에도 화소 보간을 통한 200만 화소 <br>
+                              해상도를 설정할 수 있습니다. 하지만 결과물이 110만 화소 사진보다 못한 경우가 많습니다.</p>
+                              <p>&:No filter<br>%:Cosmetic filter<br>W:Monochrome filter<br>❀:Sepia filter</p>
+                    </center>
+                </div>
+            </details>
+            <details>
+                <summary>
+                    SWITCHING THE OPERATING MODE_NORMAL Mode Recording Menu2
+                </summary>
+                <div>
+                    <center>
+                        <img src="./그림15.gif"width="300px" alt="">
+                        <p> 촬영 메뉴 2에서는 손떨림 보정, 포커스 방식, AF 포커스 모드, 측광 방식,<br>
+                             ISO 감도 등을 설정할 수 있습니다. 포커스 방식은 표준, 매크로,<br>
+                              수동 초점을 선택할 수 있고, 포커스 모드는 9점 AF와 중앙 스팟 AF를 지원합니다.<br>
+                               감도는 ISO 50 부터 ISO 1600까지 설정할 수 있습니다.</p>
+                    </center>
+                </div>
+            </details>      
+            <details>
+                <summary>
+                    SWITCHING THE OPERATING MODE_NORMAL Mode Recording Menu3
+                </summary>
+                <div>
+                    <center>
+                        <img src="./그림16.gif" width="300px" alt="">
+                        <p>  촬영 메뉴 3에서는 화이트 밸런스, 노출 모드, 얼굴 인식 기능, <br>
+                            고감도 지원 여부, 디지털 줌 이용 여부를 설정할 수 있습니다</p>
+                    </center>
+                </div>
+            </details>  
+        </div>
+        
+        <div class="right">
+            <img src="./poster.png" width="700px" alt="">
+            <div class='scene'>
+                <div class='wrap'>
+                  <div class='split'></div>
+                  <div class='ripples'>
+                    <div class='ripple1'></div>
+                    <div class='ripple2'></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+      </section>
+  
+      <footer>
+        <div class="footer">
+            <div id="button"></div>
+            <div id="container">
+              <div id="cont">
+                <div class="footer_center">
+                  <h5><img src="./main1.png" width="300px"  alt=""></h5>
+                  <ul id="ul"><p>
+                    <li>Holiday Flim Collage</li>
+                    <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+                    <li>based in The Sanyo copyright © 2023</li></p>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

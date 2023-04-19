@@ -1,0 +1,45 @@
+
+
+
+@-webkit-keyframes no-transform {
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes no-transform {
+  100% {
+    transform: none;
+  }
+}
+.scrollbox {
+  display: flex;
+  align-items: center;
+  padding: 0.5px 0;
+  overflow: hidden;
+}
+.scrollbox--primary {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+.scrollbox--secondary {
+  background-color: #141414;
+  color: #ffffff;
+}
+.scrollbox--reverse .scrollbox__item {
+  animation-direction: reverse;
+}
+.scrollbox:hover .scrollbox__item {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.scrollbox__item {
+  flex: 1 0 auto;
+  width: 25%;
+  max-width: 25%;
+  font-size: 0.8rem;
+  transform: translateX(-100%);
+  -webkit-animation: no-transform 7s linear infinite;
+          animation: no-transform 7s linear infinite;
+}

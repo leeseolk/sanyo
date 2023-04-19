@@ -1,0 +1,27 @@
+a {
+    animation: line-anime 1s linear infinite;
+    font-size: 100px;
+    padding: 15px;
+    font-family: Helvetica;
+    text-underline-offset: 0.1em;
+    color: #00f;
+  }
+  
+  @keyframes line-anime {
+    0% {
+      text-decoration: underline;
+    }
+    20% {
+      text-decoration: underline dotted;
+    }
+    40% {
+      text-decoration: underline dashed;
+    }
+    60% {
+      text-decoration: underline wavy;
+    }
+    80% {
+      text-decoration: underline double;
+    }
+  }
+  

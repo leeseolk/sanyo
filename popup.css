@@ -1,0 +1,119 @@
+.wrapper{
+    margin-left: 100px;
+    position: absolute;
+    text-align: center;
+}
+  .try-again {
+    cursor: pointer;
+    position: relative;
+    margin-top: -20px;
+    font-size: 13px;
+  }
+  .try-again:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    height: 1px;
+    top: 100%;
+    background: #ebebeb;
+   
+    transition: all 0.3s ease;
+  }
+  .try-again:hover:after {
+    left: 40%;
+    right: 40%;
+  }
+  h1 {
+    
+    font-size: 20px;
+    font-family: system-ui;
+    padding-bottom: -40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+   
+  }
+  p {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 15px;
+  }
+  p:last-of-type {
+    padding-bottom: 0;
+  }
+  .button1 {  
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 50px;
+    height: 50px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button1-text {
+    color: black;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right,  #ffbf00,#0036c0,rgb(3, 143, 21));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .popup {
+    background: rgba(255, 255, 255,0.8);
+    opacity: 0;
+    visibility: hidden;
+    height: 300px;
+    width: 300px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  .popup-inside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: box-shadow 0.45s ease 0.5s, border-radius 0.45s ease 0.25s;
+  }
+  .backgrounds {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  body.active .content {
+    opacity: 1;
+    transform: none;
+  }
+  body.active .popup {
+    opacity: 1;
+    visibility: visible;
+  }
+  body.active .popup-inside {
+    border-radius: 0;
+    box-shadow: -50px 0 200px -50px #ffbf00, 50px 0 200px -50px #0036c0;
+  }
+  
+  

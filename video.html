@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./sanyo2.css" />
+    <link rel="stylesheet" href="./text.css" />
+    <link rel="stylesheet" href="./footer1.css" />
+
+    
+
+    <title>Document</title>
+    <style>
+      .container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: block;
+  text-align: left;
+  position: relative;
+}
+.carousel > input {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -400%;
+}
+.carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -300%;
+}
+.carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -200%;
+}
+.carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -100%;
+}
+.carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: 0%;
+}
+
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 1 0 100%;
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.carousel__slide figure {
+  display: flex;
+  margin: 0;
+}
+.carousel__slide div {
+  position: relative;
+  width: 100vh;
+}
+.carousel__slide div:before {
+
+  content: "";
+  width: 100vh;
+}
+.carousel__slide div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel__slide img {
+  display: block;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+.carousel__slide .credit {
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+.carousel__slide.scrollable {
+  overflow-y: scroll;
+}
+
+.carousel__thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin: 0 -10px;
+}
+.carousel__slides + .carousel__thumbnails {
+  margin-top: 20px;
+}
+.carousel__thumbnails li {
+  flex: 1 1 auto;
+  max-width: calc((100% / 5) - 20px);
+  margin: 0 10px;
+  transition: all 300ms ease-in-out;
+}
+.carousel__thumbnails label {
+  color: antiquewhite;
+  display: block;
+  position: relative;
+  
+}
+.carousel__thumbnails label:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 50%;
+}
+.carousel__thumbnails label > h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.carousel__thumbnails label:hover, .carousel__thumbnails label:focus {
+  cursor: pointer;
+}
+h1:hover{
+  color: #ffbf00;
+}
+        body{ -ms-overflow-style: none;} 
+        ::-webkit-scrollbar { display: none;}  
+       
+
+#div1 {
+  text-align: center;
+  font-size: 46.5px;
+  background: #000000;
+  color: #fff;
+  font-family: Helvetica;
+  margin:30px;
+  line-height: 2em;
+  animation: blink 0.05s infinite alternate;
+  transform-origin: 0 0;
+  scale: 1 1.1;
+}
+
+@keyframes blink {
+  0% {
+    text-shadow: 15px 15px 0px #00f;
+  }
+  33% {
+    text-shadow: 15px 15px 0px #0f0;
+  }
+  66% {
+    text-shadow: 15px 15px 0px #f00;
+  }
+  100% {
+    text-shadow: 15px 15px 0px #fff;
+  }
+}
+
+@keyframes blink2 {
+  0% {
+    background: #000044;
+  }
+  50% {
+    background: #004400;
+  }
+  100% {
+    background: #440000;
+  }
+}
+        </style>
+</head>
+<body>
+    <header>  
+        <nav>
+            <span class="left-nav">
+             <a href="index.html"><img src="./main1.png"width="300px" alt=""></a>
+            </span>
+            <span class="right-nav">
+                <a href="./sanyo.html">Sanyo Xacti</a>
+                <a href="acc.html">Accessories</a>
+                <a href="op.html">Operate</a>
+                <a href="./photo.html">Photo</a></div>
+                <div class="video"><a href="#">Video</a></div>
+            </span>
+        </nav>
+      </header>
+      <section>
+        <div class="container">
+          <div class="carousel">
+              <input type="radio" name="slides" checked="checked" id="slide-1">
+              <input type="radio" name="slides" id="slide-2">
+              <input type="radio" name="slides" id="slide-3">
+              <input type="radio" name="slides" id="slide-4">
+              <input type="radio" name="slides" id="slide-5">
+              <input type="radio" name="slides" id="slide-6">
+              <ul class="carousel__slides">
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                            <video autoplay controls loop muted poster="aaa" >
+                              <source src="./video.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                            <video autoplay controls loop muted poster="aaa" >
+                              <source src="./video1.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                            <video autoplay controls loop muted poster="aaa" >
+                              <source src="./video2.mp4"type="video/mp4">
+                            </video>
+                          </div>
+
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                            <video autoplay controls loop muted poster="aaa" >
+                              <source src="./video3.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                      </figure>
+                  </li>
+                  <li class="carousel__slide">
+                      <figure>
+                          <div>
+                            <video autoplay controls loop muted poster="aaa" >
+                              <source src="./video4.mp4" type="video/mp4">
+                            </video>
+                          </div>
+                      </figure>
+                  </li>
+            
+              </ul>
+              <ul class="carousel__thumbnails">
+                  <li>
+                      <label for="slide-1"><h1>1</h1></label>
+                  </li>
+                  <li>
+                      <label for="slide-2"><h1>2</h1></label>
+                  </li>
+                  <li>
+                      <label for="slide-3"><h1>3</h1></label>
+                  </li>
+                  <li>
+                      <label for="slide-4"><h1>4</h1></label>
+                  </li>
+                  <li>
+                      <label for="slide-5"><h1>5</h1></label>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</div>
+</div>
+<div id="div1">I later found out that he was video recording the scene from afar.
+  <br> Even when life is difficult, it's important to cherish every little moment.</div>
+
+      </section>
+      <br><br><br>
+         <footer>
+        <div class="footer">
+            <div id="button"></div>
+            <div id="container">
+              <div id="cont">
+                <div class="footer_center">
+                  <h5><img src="./main1.png" width="300px"  alt=""></h5>
+                  <ul id="ul"><p>
+                    <li>Holiday Flim Collage</li>
+                    <li>HOME ABOUT PHOTO DETAIL CONTACT</li>
+                    <li>based in The Sanyo copyright © 2023</li></p>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

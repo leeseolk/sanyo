@@ -1,0 +1,87 @@
+
+body {
+	height: 100vh;
+    background-color: #000;
+	font-family: "Droid Serif", Georgia, serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+header {
+	padding: 4em 4em 3em 0;
+	text-align: center;
+}
+.sanyo{
+	box-sizing: border-box;
+	flex-direction:column;
+	align-items:flex-start;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(6, 181, 64, 0.5) 90%);
+}
+.acc{
+	box-sizing: border-box;
+	flex-direction:column;
+	align-items:flex-start;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(6, 181, 64, 0.5) 90%);
+}
+.op{
+	box-sizing: border-box;
+	flex-direction:column;
+	align-items:flex-start;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(6, 181, 64, 0.5) 90%);
+}
+.photo{
+	box-sizing: border-box;
+	flex-direction:column;
+	align-items:flex-start;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(6, 181, 64, 0.5) 90%);
+}
+.video{
+	box-sizing: border-box;
+	flex-direction:column;
+	align-items:flex-start;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(6, 181, 64, 0.5) 90%);
+}
+nav {
+  width:100%;
+	display:inline-block;
+}
+nav a {
+  text-decoration: none;
+	display:inline-block;
+	padding:15px;
+	-webkit-box-flex:1;
+	text-align:center;
+	font-family: 'Chakra Petch', sans-serif;
+	font-size:1.1em;
+	font-weight:400;
+	color: rgb(255, 255, 255);
+}
+nav a:hover {
+  color:rgb(3, 143, 21);
+} 
+
+@media all and (min-width: 600px) {
+nav {
+	width:100%;
+	display: inline-block;
+	margin-top: -50px;
+}
+
+.left-nav,.right-nav {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	width: 30%;
+}
+.left-nav {
+	margin-top: -10px;
+	float: left;
+    display: block;
+	padding:5px;
+}
+.right-nav{
+	padding:5px;
+	float: right;
+	margin-right: 40px;
+}
+}
